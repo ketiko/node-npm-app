@@ -20,6 +20,8 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: ketiko/gh-cache-action@main
+        with:
+          cache: "npm"
 
       - uses: actions/setup-node@v4
         with:
